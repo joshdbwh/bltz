@@ -6,7 +6,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   standalone: true,
   imports: [NxWelcomeComponent, RouterModule],
   selector: 'bltz-root',
-  templateUrl: './app.component.html',
+  template: `<router-outlet />`,
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
