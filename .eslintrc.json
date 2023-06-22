@@ -15,6 +15,14 @@
               {
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
+              },
+              {
+                "sourceTag": "domain:link",
+                "onlyDependOnLibsWithTags": ["domain:link", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:spending",
+                "onlyDependOnLibsWithTags": ["domain:spending", "domain:shared"]
               }
             ]
           }
@@ -36,6 +44,11 @@
       "env": {
         "jest": true
       },
+      "rules": {}
+    },
+    {
+      "files": "*.json",
+      "parser": "jsonc-eslint-parser",
       "rules": {}
     }
   ]

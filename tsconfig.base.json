@@ -10,24 +10,30 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ez/shell": [
-        "libs/shell/src/index.ts"
+      "@bltz/link/data-access": ["libs/link/data-access/src/index.ts"],
+      "@bltz/link/feature-account-overview": [
+        "libs/link/feature-account-overview/src/index.ts"
       ],
-      "@ez/ui": [
-        "libs/shared/ui/src/index.ts"
-      ]
+      "@bltz/link/feature-connect-account": [
+        "libs/link/feature-connect-account/src/index.ts"
+      ],
+      "@bltz/link/routes": ["libs/link/routes/src/index.ts"],
+      "@bltz/spending/data-access": ["libs/spending/data-access/src/index.ts"],
+      "@bltz/spending/feature-overview": [
+        "libs/spending/feature-overview/src/index.ts"
+      ],
+      "@bltz/spending/routes": ["libs/spending/routes/src/index.ts"],
+      "@bltz/spending/ui": ["libs/spending/ui/src/index.ts"],
+      "@bltz/spending/utils": ["libs/spending/utils/src/index.ts"],
+      "@ez/shell": ["libs/shell/src/index.ts"],
+      "@ez/tools": ["libs/tools/src/index.ts"],
+      "@ez/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
