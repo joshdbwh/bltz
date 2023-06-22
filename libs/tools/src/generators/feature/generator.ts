@@ -50,6 +50,7 @@ export default async function (tree: Tree, options: FeatureGeneratorSchema) {
     tags: normalizedOptions.parsedTags.join(','),
     skipModule: true,
     strict: true,
+    simpleName: true,
   });
 
   addFiles(

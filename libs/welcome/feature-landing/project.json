@@ -1,0 +1,34 @@
+{
+  "name": "welcome-feature-landing",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/welcome/feature-landing/src",
+  "prefix": "bltz",
+  "tags": ["type:feature", "domain:welcome"],
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/welcome/feature-landing/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/welcome/feature-landing/**/*.ts",
+          "libs/welcome/feature-landing/**/*.html"
+        ]
+      }
+    }
+  }
+}

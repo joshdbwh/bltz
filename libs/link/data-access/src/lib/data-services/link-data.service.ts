@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BaseUrl } from '@ng-journal/shared/utils';
+import { BaseUrl } from '@bltz/shared/utils';
 
 type LinkType = unknown;
 

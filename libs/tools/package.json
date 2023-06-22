@@ -1,5 +1,5 @@
 {
-  "name": "@ez/tools",
+  "name": "@bltz/tools",
   "version": "0.0.1",
   "type": "commonjs",
   "generators": "./generators.json"

@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@bltz/auth/data-access": ["libs/auth/data-access/src/index.ts"],
+      "@bltz/auth/feature-register": [
+        "libs/auth/feature-register/src/index.ts"
+      ],
+      "@bltz/auth/feature-sign-in": ["libs/auth/feature-sign-in/src/index.ts"],
+      "@bltz/auth/routes": ["libs/auth/routes/src/index.ts"],
       "@bltz/link/data-access": ["libs/link/data-access/src/index.ts"],
       "@bltz/link/feature-account-overview": [
         "libs/link/feature-account-overview/src/index.ts"
@@ -23,6 +29,7 @@
         "libs/link/feature-connect-account/src/index.ts"
       ],
       "@bltz/link/routes": ["libs/link/routes/src/index.ts"],
+      "@bltz/shared/utils": ["libs/shared/utils/src/index.ts"],
       "@bltz/spending/data-access": ["libs/spending/data-access/src/index.ts"],
       "@bltz/spending/feature-overview": [
         "libs/spending/feature-overview/src/index.ts"
@@ -30,9 +37,14 @@
       "@bltz/spending/routes": ["libs/spending/routes/src/index.ts"],
       "@bltz/spending/ui": ["libs/spending/ui/src/index.ts"],
       "@bltz/spending/utils": ["libs/spending/utils/src/index.ts"],
-      "@ez/shell": ["libs/shell/src/index.ts"],
-      "@ez/tools": ["libs/tools/src/index.ts"],
-      "@ez/ui": ["libs/shared/ui/src/index.ts"]
+      "@bltz/tools": ["libs/tools/src/index.ts"],
+      "@bltz/ui": ["libs/shared/ui/src/index.ts"],
+      "@bltz/welcome/data-access": ["libs/welcome/data-access/src/index.ts"],
+      "@bltz/welcome/feature-landing": [
+        "libs/welcome/feature-landing/src/index.ts"
+      ],
+      "@bltz/welcome/routes": ["libs/welcome/routes/src/index.ts"],
+      "@bltz/welcome/ui": ["libs/welcome/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

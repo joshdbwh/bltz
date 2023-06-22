@@ -4,12 +4,12 @@
   "license": "MIT",
   "scripts": {
     "rm": "npx nx g @nx/workspace:remove",
-    "generate:feature": "npx nx g @ez/tools:feature",
-    "generate:routes": "npx nx g @ez/tools:routes",
-    "generate:ui": "npx nx g @ez/tools:ui",
-    "generate:utils": "npx nx g @ez/tools:utils",
-    "generate:data-access": "npx nx g @ez/tools:data-access",
-    "generate:full": "npm run generate:feature -- $npm_config_domain $npm_config_name && npm run generate:routes -- $npm_config_domain && npm run generate:ui -- $npm_config_domain && npm run generate:utils -- $npm_config_domain && npm run generate:data-access -- $npm_config_domain"
+    "generate:feature": "npx nx g @bltz/tools:feature",
+    "generate:routes": "npx nx g @bltz/tools:routes",
+    "generate:ui": "npx nx g @bltz/tools:ui",
+    "generate:utils": "npx nx g @bltz/tools:utils",
+    "generate:data-access": "npx nx g @bltz/tools:data-access",
+    "generate:full": "npm run generate:feature && npm run generate:routes && npm run generate:ui && npm run generate:utils && npm run generate:data-access"
   },
   "private": true,
   "dependencies": {
@@ -66,6 +66,7 @@
     "jsonc-eslint-parser": "^2.1.0",
     "ng-packagr": "~16.0.0",
     "nx": "16.3.2",
+    "nx-cloud": "^16.0.5",
     "postcss": "^8.4.5",
     "postcss-import": "~14.1.0",
     "postcss-preset-env": "~7.5.0",

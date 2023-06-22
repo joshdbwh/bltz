@@ -1,9 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SpendingFacadeService } from '@ng-journal/spending/data-access';
+import { SpendingFacadeService } from '@bltz/spending/data-access';
+import { FlatButtonComponent } from '@bltz/ui';
+import { CalculationsService } from '@bltz/spending/utils';
+import { TableComponent } from '@bltz/spending/ui';
 
 @Component({
-  selector: 'ng-journal-overview',
+  selector: 'bltz-overview',
   standalone: true,
   imports: [CommonModule],
   template: `<p>Overview works!</p>`,
